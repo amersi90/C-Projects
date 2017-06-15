@@ -1,0 +1,5 @@
+<!ELEMENT testb (Informasjon*)>
+<!ELEMENT Informasjon (ID,Navn?,Telefon)>
+<!ELEMENT ID (#PCDATA)>
+<!ELEMENT Navn (#PCDATA)>
+<!ELEMENT Telefon (#PCDATA)>

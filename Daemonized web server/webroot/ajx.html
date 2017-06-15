@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+<xsl:template match="/">
+<html>
+<body>
+<form id="controls">
+ID<br><input type="number" name="IDValue" id="IDValue" onkeypress='return event.charCode >= 0 && event.charCode <= 57'><br>
+Name<br><input type="text" name="NameValue" id="NameValue"><br>
+Phone<br><input type="text" name="TlfValue" id="TlfValue" onkeypress='return event.charCode >= 0 && event.charCode <= 57'><br>
+
+<button type="button" onclick="searchUser(),clearForm()">Search</button>
+<button type="button" onclick="addUser(),clearForm()">Add</button>
+<button type="button" onclick="updateUser(),clearForm()">Update</button>
+<button type="button" onclick="deleteUser(),clearForm()">Delete</button>
+</form>
+<table id="demo"></table>
+
+<script src="jScript.js"></script>
+
+</body>
+</html>
